@@ -20,6 +20,15 @@ set showmatch
 " How many tenths of a second to blink when matching brackets
 set mat=2
 
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+
+filetype indent on
+
+set smarttab
+set expandtab
+
 " Delete trailing white space on save, useful for Python and CoffeeScript ;)
 func! DeleteTrailingWS()
   exe "normal mz"
