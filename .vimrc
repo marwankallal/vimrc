@@ -24,10 +24,16 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
+" Make Markdown files nicely word wrapped
+au BufRead,BufNewFile *.md setlocal textwidth=80
+
 filetype indent on
 
 set smarttab
 set expandtab
+
+" Make it obvious where 80 characters is if needed
+set colorcolumn=+1
 
 " Delete trailing white space on save, useful for Python and CoffeeScript ;)
 func! DeleteTrailingWS()
