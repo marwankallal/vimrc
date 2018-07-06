@@ -9,6 +9,9 @@ set ignorecase
 " When searching try to be smart about cases 
 set smartcase
 
+" Make backspace work normally
+set backspace=2
+
 " Highlight search results
 set hlsearch
 
